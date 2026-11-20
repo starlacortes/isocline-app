@@ -1,0 +1,16 @@
+{
+  // isocline.app on Cloudflare Pages: static pages from ./public, plus functions/api/notify.js
+  // for the launch-notice form. There is no build step.
+  "name": "isocline-app",
+  "pages_build_output_dir": "./public",
+  "compatibility_date": "2026-11-19",
+
+  // Where launch-notice addresses are kept (the table is in schema.sql).
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "isocline-notify",
+      "database_id": "87475ff4-d788-48b6-a50c-6f73ceb99e00"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- theme-color values are rewritten by tools/scripts/gen_isocline_tokens.py; do not edit them by hand. -->
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F8F3E8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1C0C10" media="(prefers-color-scheme: dark)">
+<title>Support · Isocline</title>
+<meta name="description" content="How to reach Isocline support, and answers to common questions.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/tokens/isocline.css">
+<link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/plates.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="plates" data-plates="2" aria-hidden="true"></div>
+  <div class="site-header__inner">
+    <div class="wrap">
+      <div class="lockup">
+        <a class="lockup__mark" href="/" aria-label="Isocline, home">
+          <svg viewBox="45 -710 5195 722" aria-hidden="true" focusable="false">
+            <defs>
+              <filter id="cut" x="-2%" y="-12%" width="104%" height="124%" color-interpolation-filters="sRGB">
+                <feMorphology in="SourceAlpha" operator="erode" radius="5" result="e0"/>
+                <feComposite in="SourceAlpha" in2="e0" operator="out" result="r0"/>
+                <feFlood class="cut-rim" result="f0"/>
+                <feComposite in="f0" in2="r0" operator="in" result="s0"/>
+                <feOffset in="SourceAlpha" dx="10" dy="36" result="o1"/>
+                <feGaussianBlur in="o1" stdDeviation="22" result="b1"/>
+                <feComposite in="SourceAlpha" in2="b1" operator="out" result="i1"/>
+                <feFlood class="cut-shade" result="f1"/>
+                <feComposite in="f1" in2="i1" operator="in" result="s1"/>
+                <feOffset in="SourceAlpha" dx="-6" dy="-24" result="o2"/>
+                <feGaussianBlur in="o2" stdDeviation="8" result="b2"/>
+                <feComposite in="SourceAlpha" in2="b2" operator="out" result="i2"/>
+                <feFlood class="cut-lite" result="f2"/>
+                <feComposite in="f2" in2="i2" operator="in" result="s2"/>
+                <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="s0"/><feMergeNode in="s2"/><feMergeNode in="s1"/></feMerge>
+              </filter>
+            </defs>
+            <use class="lockup__word" href="/brand/isocline-wordmark.svg#w"/>
+          </svg>
+        </a>
+        <nav class="lockup__nav" aria-label="Pages">
+          <a href="/support" aria-current="page">Support</a>
+          <a href="/privacy">Privacy</a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="page wrap">
+  <div class="prose">
+
+    <div class="prose__intro">
+      <p class="eyebrow">Support</p>
+      <h1>Support</h1>
+      <p class="lede">Questions and problems go to one address. [TYPICAL REPLY TIME]</p>
+    </div>
+
+    <div class="card">
+      <div class="card__text">
+        <span class="eyebrow">Email</span>
+        <span class="card__value">support@isocline.app</span>
+      </div>
+      <a class="pill" href="mailto:support@isocline.app">Write to support</a>
+    </div>
+
+    <div class="rows">
+      <div>
+        <h2>Where your records are</h2>
+        <p>On your iPhone and Apple Watch. With iCloud Sync on, also in your private iCloud database. Isocline Labs stores none of it.</p>
+      </div>
+      <div>
+        <h2>Moving to a new iPhone</h2>
+        <p>Turn on iCloud Sync in Settings, under Privacy &amp; Data, then sign in to the same Apple ID on the new phone. You can also export everything as CSV or JSON.</p>
+      </div>
+      <div>
+        <h2>What the curve is</h2>
+        <p>The curve is modeled from the doses you log and calibrated to your lab results when you add them. It is an estimate, not a measurement.</p>
+      </div>
+      <div>
+        <h2>Keeping it discreet</h2>
+        <p>Reminders name no medication by default. The app icon can be switched to a plain one, and App Lock puts Face ID in front of your records.</p>
+      </div>
+      <div>
+        <h2>Isocline Plus</h2>
+        <p>Subscriptions are billed by Apple. To change or cancel one, open Settings on your iPhone, tap your name, then Subscriptions.</p>
+      </div>
+    </div>
+
+    <div class="note">
+      <p class="eyebrow">Medical note</p>
+      <p>Isocline is a record and a model. It does not diagnose, recommend doses or replace your clinician.</p>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer wrap">
+  <div class="site-footer__inner">
+    <span>© 2026 Isocline Labs LLC</span>
+    <span>Shaped protocol.</span>
+  </div>
+</footer>
+
+</body>
+</html>

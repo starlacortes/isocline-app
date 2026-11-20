@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- Native appearance: cream paper by day, night paper by dark. The theme-color values are the resolved
+     paper and are rewritten by tools/scripts/gen_isocline_tokens.py; do not edit them by hand. -->
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F8F3E8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1C0C10" media="(prefers-color-scheme: dark)">
+<title>Isocline</title>
+<meta name="description" content="Isocline shows you your curve. A private, on-device tracker for iPhone and Apple Watch. Coming soon to the App Store.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/tokens/isocline.css">
+<link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/plates.js" defer></script>
+<script src="/assets/notify.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<main id="main" class="home">
+  <div class="plates" data-plates="0" aria-hidden="true"></div>
+
+  <div class="home__center">
+    <div class="lockup">
+      <h1>
+        <a class="lockup__mark" href="/" aria-label="Isocline">
+          <!-- The word is never typed: this is the master outline, rendered as a cut-out in the paper. -->
+          <svg viewBox="45 -710 5195 722" aria-hidden="true" focusable="false">
+            <defs>
+              <filter id="cut" x="-2%" y="-12%" width="104%" height="124%" color-interpolation-filters="sRGB">
+                <feMorphology in="SourceAlpha" operator="erode" radius="5" result="e0"/>
+                <feComposite in="SourceAlpha" in2="e0" operator="out" result="r0"/>
+                <feFlood class="cut-rim" result="f0"/>
+                <feComposite in="f0" in2="r0" operator="in" result="s0"/>
+                <feOffset in="SourceAlpha" dx="10" dy="36" result="o1"/>
+                <feGaussianBlur in="o1" stdDeviation="22" result="b1"/>
+                <feComposite in="SourceAlpha" in2="b1" operator="out" result="i1"/>
+                <feFlood class="cut-shade" result="f1"/>
+                <feComposite in="f1" in2="i1" operator="in" result="s1"/>
+                <feOffset in="SourceAlpha" dx="-6" dy="-24" result="o2"/>
+                <feGaussianBlur in="o2" stdDeviation="8" result="b2"/>
+                <feComposite in="SourceAlpha" in2="b2" operator="out" result="i2"/>
+                <feFlood class="cut-lite" result="f2"/>
+                <feComposite in="f2" in2="i2" operator="in" result="s2"/>
+                <feMerge><feMergeNode in="SourceGraphic"/><feMergeNode in="s0"/><feMergeNode in="s2"/><feMergeNode in="s1"/></feMerge>
+              </filter>
+            </defs>
+            <use class="lockup__word" href="/brand/isocline-wordmark.svg#w"/>
+          </svg>
+        </a>
+      </h1>
+      <nav class="lockup__nav" aria-label="Pages">
+        <a href="/support">Support</a>
+        <a href="/privacy">Privacy</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="home__foot">
+    <p class="tagline">Find the curve.</p>
+    <div class="notify">
+      <p class="mono">Coming soon to the App Store</p>
+      <form class="notify__form" method="post" action="/api/notify" data-notify>
+        <div class="field">
+          <label for="notify-email">Email for one notice at launch</label>
+          <input id="notify-email" name="email" type="email" autocomplete="email" inputmode="email" required>
+        </div>
+        <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="pill" type="submit">Notify me</button>
+        <p class="notify__status" role="status" aria-live="polite" data-notify-status></p>
+      </form>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>
